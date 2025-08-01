@@ -1,0 +1,42 @@
+<!-- message-board.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guest Messages</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <img src="assets/logo.png" alt="logo" class="logo-img" />
+      <img src="assets/main-title.png" alt="main title" class="main-title-img" />
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rsvp.html">RSVP</a></li>
+          <li><a href="details.html">Details</a></li>
+          <li><a href="message-board.html" class="active">Message Board</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="background-overlay">
+      <h2 class="wedding-phrase">Messages from Our Beloved Guests 💌</h2>
+      <div id="messages-container" class="messages-container">
+        <!-- Messages will be injected here via JS -->
+        <p>Loading messages...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <img src="assets/designedwithlove.png" alt="footer" class="footer-img" />
+  </footer>
+
+  <script src="api/messages.js"></script>
+</body>
+</html>

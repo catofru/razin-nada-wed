@@ -1,0 +1,62 @@
+<!-- rsvp.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RSVP – Qatrunada & Razin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-content">
+      <img src="assets/logo.png" alt="Logo" class="logo-img" />
+      <img src="assets/main-title.png" alt="Main Title" class="main-title-img" />
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rsvp.html">RSVP</a></li>
+          <li><a href="details.html">Details</a></li>
+          <li><a href="message-board.html">Message Board</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Form -->
+  <main>
+    <div class="form-container">
+      <h2 style="color:#cc407f;">Kindly RSVP Below</h2>
+      <form class="rsvp-form" id="rsvp-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="attendance" value="Attending" required />
+            I do!
+          </label>
+          <label>
+            <input type="radio" name="attendance" value="Not Attending" />
+            Sorry, I can't make it :(
+          </label>
+        </div>
+
+        <textarea name="message" placeholder="Leave a message (optional)" rows="4"></textarea>
+
+        <button type="submit" style="border:none; background:none; padding:0;">
+          <img src="assets/submit.png" alt="Submit RSVP" class="submit-img" />
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <img src="assets/designedwithlove.png" alt="Designed with Love" class="footer-img" />
+  </footer>
+
+  <script src="api/rsvp.js"></script>
+</body>
+</html>

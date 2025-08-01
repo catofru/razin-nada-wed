@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - CSV Access</title>
+  <style>
+    body {
+      background-color: #2f77a7;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+    input[type="password"] {
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 250px;
+    }
+    button {
+      background-color: #f2c641;
+      color: #2f77a7;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    pre {
+      background-color: #ffffff20;
+      padding: 20px;
+      margin-top: 20px;
+      width: 90%;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🔐 Admin Panel</h2>
+  <form id="adminForm">
+    <input type="password" id="password" placeholder="Enter admin password" required />
+    <br />
+    <button type="submit">View CSV</button>
+  </form>
+
+  <pre id="csvOutput" hidden></pre>
+
+  <script src="api/nada.js"></script>
+</body>
+</html>
